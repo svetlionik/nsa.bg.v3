@@ -1,0 +1,42 @@
+.site-nav>ul {
+    display: flex;
+    justify-content: space-around;
+	position: relative;
+}
+
+.site-nav ul ul {
+    display: none;
+}
+
+.site-nav ul>li {
+    display: block;
+    border: 1px solid #ddd;
+    padding: 1em 2em;
+}
+
+.site-nav ul li+li {
+    border-left: none;
+}
+
+.site-nav ul>li:hover > ul {
+    position: absolute;
+    background: #ddd;
+    display: block;
+    top: calc(inherit+20px);
+}
+
+.site-nav ul li:hover {
+    background: red;
+    cursor: pointer;
+}
+.site-nav ul li:hover a {
+    color: #444;
+}
+.site-nav ul > li:hover > a {
+    color: #fff;
+}
+
+
+.site-nav ul li a {
+    color: red;
+}
